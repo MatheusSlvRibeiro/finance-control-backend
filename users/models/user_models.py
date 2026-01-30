@@ -47,5 +47,5 @@ class User(AbstractUser, BaseModel):
         ]
     
     def __str__(self):
-        return"{self.name} ({self.email})"
+        return f"{self.name} ({self.email})"
     
