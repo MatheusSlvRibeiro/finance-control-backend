@@ -12,9 +12,12 @@ class  UserViewSet(viewsets.ModelViewSet):
     """ Viewset para gerenciar usuários """
     queryset = User.objects.filter(deleted_at__isnull=True)
     serializer_class = UserSerializer
+    permission_classes = [permissions.IsAdminUser]
+
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     filterset_fields = ['is_staff']
-    search_fields = ['name', 'email', 'created_at']
+    search_fields = ['name', 'email',]
+    ordering_fields = ['created_at']
     ordering = ['-created_at']
 
     locals().update(swagger_viewset_methods(USER_TAGS, 'usuário'))
@@ -22,7 +25,7 @@ class  UserViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action == 'create':
             return [permissions.AllowAny()]
-        return [permissions.isAuthenticated()]
+        return [permissions.IsAuthenticated()]
     
     def get_serializer_class(self):
         if self.action == 'create':
