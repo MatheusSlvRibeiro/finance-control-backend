@@ -6,3 +6,4 @@ from drf_yasg import openapi
 USER_TAGS = ['👥 Usuários']
 ACCOUNT_TAGS = ['👝 Contas']
 CATEGORY_TAGS = ['🗃️ Categorias']
+TRANSACTION_TAGS = ['💸 Transações']

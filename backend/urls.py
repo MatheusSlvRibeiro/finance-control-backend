@@ -23,6 +23,7 @@ system_patterns = [
         path('', include('users.urls')),
         path('', include('accounts.urls')),
         path('', include('categories.urls')),
+        path('', include('transactions.urls')),
     ]))
 
 ]
