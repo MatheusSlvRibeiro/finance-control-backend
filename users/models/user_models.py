@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.base_user import BaseUserManager  
 from django.db import models
 from core.mixins.models import BaseModel
-import uuid
+
 
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):

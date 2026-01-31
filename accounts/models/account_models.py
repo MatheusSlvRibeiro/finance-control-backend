@@ -2,12 +2,13 @@ from core.mixins.models import BaseModel
 from django.db import models
 from django.conf import settings
 
-class Account(BaseModel):
 
-    class AccountType(models.TextChoices):
-        CHECKING = 'checking', 'Conta corrente'
-        WALLET = 'wallet', 'Carteira'
-        INVESTMENTS = 'investments', 'Investimentos'
+class AccountType(models.TextChoices):
+    CHECKING = 'checking', 'Conta corrente'
+    WALLET = 'wallet', 'Carteira'
+    INVESTMENTS = 'investments', 'Investimentos'
+
+class Account(BaseModel):
 
     name = models.CharField(
         max_length=100, 

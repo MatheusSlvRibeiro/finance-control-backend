@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from accounts.models import Account
+from accounts.models.account_models import Account, AccountType
 
 class AccountCreateSerializer(serializers.ModelSerializer):
 
-    account_type =  serializers.ChoiceField(
-        choices=Account.AccountType.choices
+    account_type = serializers.ChoiceField(
+        choices=AccountType.choices
     )
 
     class Meta:
