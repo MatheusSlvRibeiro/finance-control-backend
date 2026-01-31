@@ -1,15 +1,12 @@
 from rest_framework import serializers
 from users.models.user_models import User
-from categories.models.category_models import Category, CategoryColor, CategoryIcon, TransactionType
-# from transactions.models.transactions_models import TransactionType
-
-
+from categories.models.category_models import Category, CategoryColor, CategoryIcon, CategoryType
 class CategoryCreateSerializer(serializers.ModelSerializer):
 
     queryset=User.objects.filter(is_active=True)
 
     category_type = serializers.ChoiceField(
-        choices=TransactionType.choices
+        choices=CategoryType.choices
     )
     category_color = serializers.ChoiceField(
         choices=CategoryColor.choices

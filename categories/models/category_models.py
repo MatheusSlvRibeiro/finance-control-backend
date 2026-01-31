@@ -1,12 +1,12 @@
 from django.db import models
 from core.mixins.models import BaseModel
-# from transactions.models.transactions_models import TransactionType
 from django.conf import settings
 
 
-class TransactionType(models.TextChoices):
+class CategoryType(models.TextChoices):
     INCOME = 'income', 'Receitas'
     EXPENSE = 'expense', 'Despesas'
+
 
 class CategoryColor(models.TextChoices):
     GREEN = 'green', 'Verde'
@@ -31,6 +31,19 @@ class CategoryIcon(models.TextChoices):
     PARTYPOPPER = 'partypopper', 'Lazer'
     
 
+class CategoriesList(models.TextChoices):
+    WORK = 'work', 'Trabalho'
+    INVESTMENTS = 'investments', 'Investimentos'
+    FREELANCE = 'freelance', 'Freelance'
+    HOME = 'home', 'Moradia'
+    FOOD = 'food', 'Alimentação'
+    TRANSPORT = 'transport', 'Transporte'
+    SERVICES = 'services', 'Serviços'
+    HEALTHY = 'healthy', 'Saúde'
+    LEISURE = 'leisure', 'Lazer'
+
+
+
 class Category(BaseModel):
     name = models.CharField(
         max_length=100,
@@ -38,7 +51,7 @@ class Category(BaseModel):
     )
     category_type = models.CharField(
         max_length=20,
-        choices=TransactionType.choices,
+        choices=CategoryType.choices,
         blank=False,
         verbose_name='Tipo de Categoria',
     )
