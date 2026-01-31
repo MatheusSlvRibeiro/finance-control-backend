@@ -17,6 +17,7 @@ schema_view = get_schema_view(
 system_patterns = [
     path('admin/', admin.site.urls),
     path('api/', include('users.urls')),
+    path('api/', include('accounts.urls')),
 ]
 
 swaggerpatterns = [

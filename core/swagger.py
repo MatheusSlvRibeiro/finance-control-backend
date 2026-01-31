@@ -4,3 +4,4 @@ from drf_yasg import openapi
 
 # Tags para organização no Swagger
 USER_TAGS = ['👥 Usuários']
+ACCOUNT_TAGS = ['👝 Contas']
