@@ -4,19 +4,19 @@ Uma API REST robusta desenvolvida em Django para o ecossistema Finance Control, 
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Configuração](#configuração)
-- [Banco de Dados](#banco-de-dados)
-- [Execução](#execução)
-- [Desenvolvimento](#desenvolvimento)
-- [API Documentation](#api-documentation)
-- [Testes](#testes)
-- [Deploy](#deploy)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- [Sobre o Projeto](#🚀-sobre-o-projeto)
+- [Tecnologias Utilizadas](#🛠-tecnologias-utilizadas)
+- [Pré-requisitos](#📋-pré-requisitos)
+- [Instalação](#🔧-instalação)
+- [Configuração](#⚙️-configuração)
+- [Banco de Dados](#🗄️-banco-de-dados)
+- [Execução](#🚀-execução)
+- [Desenvolvimento](#💻-desenvolvimento)
+- [API Documentation](#📚-api-documentation)
+- [Testes](#🧪-testes)
+- [Deploy](#🚀-deploy)
+- [Contribuição](#🤝-contribuição)
+- [Licença](#📄-licença)
 - [Notas Técnicas Futuras](#notas-técnicas-futuras)
 - [Changelog](#changelog)
 - [Estrutura Completa do Projeto](#estrutura-completa-do-projeto)
@@ -154,10 +154,10 @@ MIT
 
 ## Changelog
 
-- 2026-01-30: Estrutura empresarial, documentação Swagger, modularização, soft delete, UUID, melhorias de segurança e escalabilidade.
+- **2026-01-30**: Estrutura empresarial, documentação Swagger, modularização, soft delete, UUID, melhorias de segurança e escalabilidade.
 
 ---
 
 ## Estrutura Completa do Projeto
 
-Consulte a estrutura detalhada e padrões de arquitetura em [estrutura_final.md](estrutura_final.md).
+Consulte a estrutura detalhada e padrões de arquitetura em [ESTRUTURA.md](ESTRUTURA.md).
